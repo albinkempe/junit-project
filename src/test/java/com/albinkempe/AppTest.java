@@ -48,5 +48,8 @@ public class AppTest {
     @Test
     public void testMul() {
         assertEquals(4, App.mul(2, 2));
+        assertEquals(2, App.mul(2, 1));
+        assertEquals(0, App.mul(5, 0));
+        assertEquals(10, App.mul(-5, -2));
     }
 }
