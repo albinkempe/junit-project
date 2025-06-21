@@ -18,11 +18,26 @@ public class AppTest {
         assertTrue(true);
     }
 
+    /**
+     * Test add(a, b) function. Should add integer a and b and output the result.
+     */
     @Test
     public void testAdd() {
         assertEquals(5, App.add(2, 3));
         assertEquals(1, App.add(1, 0));
         assertEquals(0, App.add(0, 0));
         assertEquals(-1, App.add(-2, 1));
+    }
+
+    /**
+     * Test sub(a, b) function. Should subtract integer b from a and output the
+     * result.
+     */
+    @Test
+    public void testSub() {
+        assertEquals(-1, App.sub(2, 3));
+        assertEquals(1, App.sub(1, 0));
+        assertEquals(0, App.sub(0, 0));
+        assertEquals(-3, App.sub(-2, 1));
     }
 }
