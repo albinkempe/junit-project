@@ -40,4 +40,13 @@ public class AppTest {
         assertEquals(0, App.sub(0, 0));
         assertEquals(-3, App.sub(-2, 1));
     }
+
+    /**
+     * Test mul(a, b) function. Should multiply integer a and b and output the
+     * result.
+     */
+    @Test
+    public void testMul() {
+        assertEquals(4, App.mul(2, 2));
+    }
 }
